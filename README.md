@@ -1,4 +1,4 @@
-# ReactDictionaryAPI
+# ReactDictionaryWebApp
 Created with CodeSandbox
 ## Site available for preview at: 
 ### https://dict1.netlify.app
