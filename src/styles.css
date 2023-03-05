@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Comic+Neue&family=Didact+Gothic&family=PT+Serif&display=swap");
+.App {
+  overflow-x: hidden;
+  margin: auto;
+  width: 26%;
+  font-family: sans-serif;
+  text-align: center;
+  position: absolute;
+}
+#BookImg {
+  filter: grayscale(90%) brightness(88%);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 13px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 9px;
+  width: 9px;
+  left: 1px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #515452;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #515452;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.horizontalLine {
+  width: 80%;
+  transform: translate(14%, -2000%);
+}
+
+header {
+  margin: auto;
+  top: 0;
+  padding-bottom: 3.5rem;
+  padding-top: 1rem;
+}
+header img {
+  padding-top: 1.5rem;
+  margin: auto;
+  left: 0;
+  position: absolute;
+  padding-left: 10.5rem;
+}
+header #fontSelector {
+  margin: auto;
+  right: 0;
+  padding-top: 2rem;
+  position: absolute;
+  padding-right: 9rem;
+}
+
+header .switchDiv {
+  right: 0;
+  position: absolute;
+  padding-top: 2.3rem;
+  padding-right: 6.5rem;
+}
+header #SunOrMoon {
+  margin: auto;
+  right: 0;
+  position: absolute;
+  padding-top: 2rem;
+  padding-right: 4.5rem;
+}
+
+header select {
+  border: none;
+}
+header select::after,
+select::before {
+  border: none;
+}
+
+.body {
+  margin: auto;
+  padding-top: 2rem;
+}
+.body .SearchBar {
+  padding-right: 2rem;
+}
+.body .SearchBar input {
+  margin: auto;
+  font-size: 1rem;
+  padding: 0.3rem 17rem 0.3rem 1rem;
+
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.body #textInfo {
+  text-align: left;
+  margin-right: -5rem;
+  padding: 1rem 0.5rem;
+}
+
+/*--------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  #BookImg {
+    margin-left: 1rem;
+  }
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: -6rem;
+  }
+  .horizontalLine {
+    width: 100%;
+  }
+  header {
+    margin: auto;
+    top: 0;
+    padding-bottom: 3.5rem;
+    padding-top: 1rem;
+  }
+  header img {
+    padding-top: 1.8rem;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    padding-left: 10rem;
+  }
+  header #fontSelector {
+    margin: auto;
+    right: 0;
+    padding-top: 2rem;
+    position: absolute;
+    padding-right: 3rem;
+  }
+
+  header .switchDiv {
+    right: 0;
+    position: absolute;
+    padding-top: 2.3rem;
+    padding-right: 1.2rem;
+  }
+  header #SunOrMoon {
+    margin: auto;
+    right: 0;
+    position: absolute;
+    padding-top: 2rem;
+    padding-right: 0rem;
+  }
+
+  .body {
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .body .SearchBar {
+    padding-right: 2rem;
+  }
+  .body .SearchBar input {
+    margin: auto;
+    font-size: 1rem;
+    padding: 0.3rem 1.7rem 0.3rem 1rem;
+
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+
+  .body #textInfo {
+    text-align: left;
+    padding: 1rem 0.5rem;
+    margin-right: -10.5rem;
+  }
+}
+.App {
+  overflow-x: hidden;
+  margin: auto;
+  width: 26%;
+  font-family: sans-serif;
+  text-align: center;
+  position: absolute;
+}
+#BookImg {
+  filter: grayscale(90%) brightness(88%);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 13px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 9px;
+  width: 9px;
+  left: 1px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #515452;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #515452;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.horizontalLine {
+  width: 80%;
+  transform: translate(14%, -2000%);
+}
+
+header {
+  margin: auto;
+  top: 0;
+  padding-bottom: 3.5rem;
+  padding-top: 1rem;
+}
+header img {
+  padding-top: 1.5rem;
+  margin: auto;
+  left: 0;
+  position: absolute;
+  padding-left: 10.5rem;
+}
+header #fontSelector {
+  margin: auto;
+  right: 0;
+  padding-top: 2rem;
+  position: absolute;
+  padding-right: 9rem;
+}
+
+header .switchDiv {
+  right: 0;
+  position: absolute;
+  padding-top: 2.3rem;
+  padding-right: 6.5rem;
+}
+header #SunOrMoon {
+  margin: auto;
+  right: 0;
+  position: absolute;
+  padding-top: 2rem;
+  padding-right: 4.5rem;
+}
+
+header select {
+  border: none;
+}
+header select::after,
+select::before {
+  border: none;
+}
+
+.body {
+  margin: auto;
+  padding-top: 2rem;
+}
+.body .SearchBar {
+  padding-right: 2rem;
+}
+.body .SearchBar input {
+  margin: auto;
+  font-size: 1rem;
+  padding: 0.3rem 17rem 0.3rem 1rem;
+
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.body #textInfo {
+  text-align: left;
+  margin-right: -5rem;
+  padding: 1rem 0.5rem;
+}
+
+/*--------------------------------------------*/
+
+@media screen and (max-width: 675px) {
+  #BookImg {
+    margin-left: 0.4rem;
+  }
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: -7rem;
+  }
+  .horizontalLine {
+    transform: translate(26%, -2000%);
+    width: 100%;
+  }
+  header {
+    margin: auto;
+    top: 0;
+    padding-bottom: 3.5rem;
+    padding-top: 1rem;
+  }
+  header img {
+    padding-top: 1.8rem;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    padding-left: 10rem;
+  }
+  header #fontSelector {
+    margin: auto;
+    right: 0;
+    padding-top: 2rem;
+    position: absolute;
+    padding-right: 3rem;
+  }
+
+  header .switchDiv {
+    right: 0;
+    position: absolute;
+    padding-top: 2.3rem;
+    padding-right: 1.2rem;
+  }
+  header #SunOrMoon {
+    margin: auto;
+    right: 0;
+    position: absolute;
+    padding-top: 2rem;
+    padding-right: 0rem;
+  }
+
+  .body {
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .body .SearchBar {
+    padding-right: 2rem;
+  }
+  .body .SearchBar input {
+    margin: auto;
+    font-size: 1rem;
+    padding: 0.3rem 1.7rem 0.3rem 1rem;
+
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+
+  .body #textInfo {
+    text-align: left;
+    padding: 1rem 0.5rem;
+    margin-right: -10.5rem;
+  }
+}
